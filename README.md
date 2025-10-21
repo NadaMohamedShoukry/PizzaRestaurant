@@ -14,3 +14,18 @@
 - Payments are made on delivery; no payment processing is needed in the app.
 - Each new order receives a unique ID displayed in the UI for status lookup.
 - Users can mark orders as priority even after placing them.
+
+## Deriving Feature Categories
+From the requirements, we derive the main feature categories:
+- User: Handling user input such as name.
+- Menu: Loading and displaying the pizza menu.
+- Cart: Managing selected pizzas and quantities.
+- Order: Placing new orders and looking up existing orders by ID.
+
+## Defining Application Pages
+Based on the feature categories, we identify the pages needed:
+- Homepage: Where the user inputs their name , /.
+- Pizza Menu page: Displays the menu , /menu.
+- Cart page: Shows the user's cart , /cart.
+- New Order page: For placing a new order,  /order/new.
+- Order Lookup page: For looking up an existing order by ID, /order/:orderId.
