@@ -29,3 +29,16 @@ Based on the feature categories, we identify the pages needed:
 - Cart page: Shows the user's cart , /cart.
 - New Order page: For placing a new order,  /order/new.
 - Order Lookup page: For looking up an existing order by ID, /order/:orderId.
+
+## State Management
+Our four feature categories map nicely to different state slices or domains, borrowing the term "state slices" from Redux:
+- User slice: Global UI state stored within the application.
+- Menu slice: Global remote state fetched from an API.
+- Cart slice: Global UI state stored locally.
+- Order slice: Global remote state submitted to and fetched from an API.
+
+## Technology Decisions
+- Routing: Use React Router, the standard for React single-page applications.
+- Styling: Use Tailwind CSS, a popular and trendy CSS framework.
+- Remote State Management: Utilize React Router's new data fetching capabilities (version 6.4+) to implement a "render as you fetch" approach.
+- UI State Management: Use Redux for managing complex UI state, providing advantages for this kind of state.
